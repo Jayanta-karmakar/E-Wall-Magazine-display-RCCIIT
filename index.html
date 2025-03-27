@@ -1,32 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RCCIIT Wall Magazine</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-  <title>RCCIIT | Wall Magazine</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
-
 <body>
   <header>
     <div class="topnav" id="myTopnav">
       <a href="index.html" class="active">Home</a>
       <a href="contact.html">Contact</a>
       <a href="about.html">About</a>
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
         <i class="fa fa-bars"></i>
       </a>
     </div>
   </header>
 
-  <section class="hero fade-in">
+  <section class="hero">
     <div class="hero-content">
-      <h1>Welcome to the Wall Magazine of RCCIIT</h1>
-      <p class="subtitle">Celebrating our MCA 2021 Batch</p>
-      <p>Explore memories, achievements, and moments from our journey at RCC Institute of Information Technology, Kolkata</p>
+      <h1>Welcome to RCCIIT Wall Magazine</h1>
+      <p class="subtitle">MCA 2021 Batch Memories</p>
+      
       <div class="hero-buttons">
         <a href="#gallery" class="btn">View Gallery</a>
         <a href="about.html" class="btn btn-outline">About College</a>
@@ -34,366 +31,8 @@
     </div>
   </section>
 
-  <div class="gallery-intro fade-in">
-    <div class="intro-content">
-      <h2>MCA 2021 Batch Gallery</h2>
-      <p>Browse through our collection of memories featuring students from the MCA 2021 batch. Click on any image to view it in full size.</p>
-    </div>
-  </div>
+  <div id="gallery" class="gallery-container"></div>
 
-  <div id="gallery" class="row">
-    <!-- Column 1 -->
-    <div class="column-row">
-      <div class="gallery">
-        <div class="gallery-item" onclick="openModal('./Photos/Anushka_Sen (1).jpg', 'Anuska Sen MCA 2021')">
-          <img src="./Photos/Anushka_Sen (1).jpg" alt="Anuska Sen">
-          <div class="desc">Anuska Sen</div>
-        </div>
-      </div>
-      <div class="gallery">
-        <div class="gallery-item" onclick="openModal('./photos/Anushka_Sen (2).jpg', 'Anuska Sen MCA 2021')">
-          <img src="./photos/Anushka_Sen (2).jpg" alt="Anuska Sen">
-          <div class="desc">Anuska Sen</div>
-        </div>
-      </div>
-      <div class="gallery">
-        <div class="gallery-item" onclick="openModal('./photos/Anushka_Sen (3).jpg', 'Anuska Sen MCA 2021')">
-          <img src="./photos/Anushka_Sen (3).jpg" alt="Anuska Sen">
-          <div class="desc">Anuska Sen</div>
-        </div>
-      </div>
-      <div class="gallery">
-        <div class="gallery-item" onclick="openModal('./photos/Arijit_Roy (1).jpg', 'Arijit Roy MCA 2021')">
-          <img src="./photos/Arijit_Roy (1).jpg" alt="Arijit Roy">
-          <div class="desc">Arijit Roy</div>
-        </div>
-      </div>
-      <div class="gallery">
-        <div class="gallery-item" onclick="openModal('./photos/Arijit_Roy (2).jpg', 'Arijit Roy MCA 2021')">
-          <img src="./photos/Arijit_Roy (2).jpg" alt="Arijit Roy">
-          <div class="desc">Arijit Roy</div>
-        </div>
-      </div>
-      <div class="gallery">
-        <div class="gallery-item" onclick="openModal('./photos/Arijit_Roy (3).jpg', 'Arijit Roy MCA 2021')">
-          <img src="./photos/Arijit_Roy (3).jpg" alt="Arijit Roy">
-          <div class="desc">Arijit Roy</div>
-        </div>
-      </div>
-      <div class="gallery">
-        <div class="gallery-item" onclick="openModal('./photos/Arpita_kundu (1).jpg', 'Arpita Kundu MCA 2021')">
-          <img src="./photos/Arpita_kundu (1).jpg" alt="Arpita Kundu">
-          <div class="desc">Arpita Kundu</div>
-        </div>
-      </div>
-      <div class="gallery">
-        <div class="gallery-item" onclick="openModal('./photos/Arpita_Kundu (2).jpg', 'Arpita Kundu MCA 2021')">
-          <img src="./photos/Arpita_Kundu (2).jpg" alt="Arpita Kundu">
-          <div class="desc">Arpita Kundu</div>
-        </div>
-      </div>
-      <div class="gallery">
-        <div class="gallery-item" onclick="openModal('./photos/Arpita_Kundu (3).jpg', 'Arpita Kundu MCA 2021')">
-          <img src="./photos/Arpita_Kundu (3).jpg" alt="Arpita Kundu">
-          <div class="desc">Arpita Kundu</div>
-        </div>
-      </div>
-      <div class="gallery">
-        <div class="gallery-item" onclick="openModal('./photos/Arpita_Kundu (4).jpg', 'Arpita Kundu MCA 2021')">
-          <img src="./photos/Arpita_Kundu (4).jpg" alt="Arpita Kundu">
-          <div class="desc">Arpita Kundu</div>
-        </div>
-      </div>
-      <div class="gallery">
-        <div class="gallery-item" onclick="openModal('./photos/Isha_Yadav (2).jpg', 'Isha Yadav MCA 2021')">
-          <img src="./photos/Isha_Yadav (2).jpg" alt="Isha Yadav">
-          <div class="desc">Isha Yadav</div>
-        </div>
-      </div>
-    </div>
-    
-    <!-- Column 2 -->
-    <div class="column-row">
-      <div class="gallery">
-        <div class="gallery-item" onclick="openModal('./photos/Debjit (1).jpeg', 'Debjit Ghosh MCA 2021')">
-          <img src="./photos/Debjit (1).jpeg" alt="Debjit Ghosh">
-          <div class="desc">Debjit Ghosh</div>
-        </div>
-      </div>
-      <div class="gallery">
-        <div class="gallery-item" onclick="openModal('./photos/Debjit (2).jpeg', 'Debjit Ghosh MCA 2021')">
-          <img src="./photos/Debjit (2).jpeg" alt="Debjit Ghosh">
-          <div class="desc">Debjit Ghosh</div>
-        </div>
-      </div>
-      <div class="gallery">
-        <div class="gallery-item" onclick="openModal('./photos/Dev_Das (1).jpg', 'Devdas Roy MCA 2021')">
-          <img src="./photos/Dev_Das (1).jpg" alt="Devdas Roy">
-          <div class="desc">Devdas Roy</div>
-        </div>
-      </div>
-      <div class="gallery">
-        <div class="gallery-item" onclick="openModal('./photos/Dev_Das (2).jpeg', 'Devdas Roy MCA 2021')">
-          <img src="./photos/Dev_Das (2).jpeg" alt="Devdas Roy">
-          <div class="desc">Devdas Roy</div>
-        </div>
-      </div>
-      <div class="gallery">
-        <div class="gallery-item" onclick="openModal('./photos/Dev_Das (2).jpg', 'Devdas Roy MCA 2021')">
-          <img src="./photos/Dev_Das (2).jpg" alt="Devdas Roy">
-          <div class="desc">Devdas Roy</div>
-        </div>
-      </div>
-      <div class="gallery">
-        <div class="gallery-item" onclick="openModal('./photos/Dev_Das (3).jpg', 'Devdas Roy MCA 2021')">
-          <img src="./photos/Dev_Das (3).jpg" alt="Devdas Roy">
-          <div class="desc">Devdas Roy</div>
-        </div>
-      </div>
-      <div class="gallery">
-        <div class="gallery-item" onclick="openModal('./photos/Dev_Das (4).jpg', 'Devdas Roy MCA 2021')">
-          <img src="./photos/Dev_Das (4).jpg" alt="Devdas Roy">
-          <div class="desc">Devdas Roy</div>
-        </div>
-      </div>
-      <div class="gallery">
-        <div class="gallery-item" onclick="openModal('./photos/Dev_Das (5).jpg', 'Devdas Roy MCA 2021')">
-          <img src="./photos/Dev_Das (5).jpg" alt="Devdas Roy">
-          <div class="desc">Devdas Roy</div>
-        </div>
-      </div>
-      <div class="gallery">
-        <div class="gallery-item" onclick="openModal('./photos/Dev_Das (6).jpg', 'Devdas Roy MCA 2021')">
-          <img src="./photos/Dev_Das (6).jpg" alt="Devdas Roy">
-          <div class="desc">Devdas Roy</div>
-        </div>
-      </div>
-      <div class="gallery">
-        <div class="gallery-item" onclick="openModal('./photos/Dev_Das (7).jpg', 'Devdas Roy MCA 2021')">
-          <img src="./photos/Dev_Das (7).jpg" alt="Devdas Roy">
-          <div class="desc">Devdas Roy</div>
-        </div>
-      </div>
-      <div class="gallery">
-        <div class="gallery-item" onclick="openModal('./photos/Isha_Yadav (1).jpg', 'Isha Yadav MCA 2021')">
-          <img src="./photos/Isha_Yadav (1).jpg" alt="Isha Yadav">
-          <div class="desc">Isha Yadav</div>
-        </div>
-      </div>
-    </div>
-    
-    <!-- Column 3 -->
-    <div class="column-row">
-      <div class="gallery">
-        <div class="gallery-item" onclick="openModal('./photos/Jayanta.jpeg', 'Jayanta Karmakar MCA 2021')">
-          <img src="./photos/Jayanta.jpeg" alt="Jayanta Karmakar">
-          <div class="desc">Jayanta Karmakar</div>
-        </div>
-      </div>
-      <div class="gallery">
-        <div class="gallery-item" onclick="openModal('./photos/jayanta_banti.jpg', 'Jayanta Karmakar MCA 2021')">
-          <img src="./photos/jayanta_banti.jpg" alt="Jayanta Karmakar">
-          <div class="desc">Jayanta Karmakar</div>
-        </div>
-      </div>
-      <div class="gallery">
-        <div class="gallery-item" onclick="openModal('./photos/JayantaKarmakar.jpg', 'Jayanta Karmakar MCA 2021')">
-          <img src="./photos/JayantaKarmakar.jpg" alt="Jayanta Karmakar">
-          <div class="desc">Jayanta Karmakar</div>
-        </div>
-      </div>
-      <div class="gallery">
-        <div class="gallery-item" onclick="openModal('./photos/Moumita.jpg', 'Moumita Singha MCA 2021')">
-          <img src="./photos/Moumita.jpg" alt="Moumita Singha">
-          <div class="desc">Moumita Singha</div>
-        </div>
-      </div>
-      <div class="gallery">
-        <div class="gallery-item" onclick="openModal('./photos/Nishant_Gond (1).jpg', 'Nishant Gond MCA 2021')">
-          <img src="./photos/Nishant_Gond (1).jpg" alt="Nishant Gond">
-          <div class="desc">Nishant Gond</div>
-        </div>
-      </div>
-      <div class="gallery">
-        <div class="gallery-item" onclick="openModal('./photos/Nishant_Gond (2).jpg', 'Nishant Gond MCA 2021')">
-          <img src="./photos/Nishant_Gond (2).jpg" alt="Nishant Gond">
-          <div class="desc">Nishant Gond</div>
-        </div>
-      </div>
-      <div class="gallery">
-        <div class="gallery-item" onclick="openModal('./photos/Riya_Goswami (1).jpg', 'Riya Goswami MCA 2021')">
-          <img src="./photos/Riya_Goswami (1).jpg" alt="Riya Goswami">
-          <div class="desc">Riya Goswami</div>
-        </div>
-      </div>
-      <div class="gallery">
-        <div class="gallery-item" onclick="openModal('./photos/Riya_Goswami (2).jpg', 'Riya Goswami MCA 2021')">
-          <img src="./photos/Riya_Goswami (2).jpg" alt="Riya Goswami">
-          <div class="desc">Riya Goswami</div>
-        </div>
-      </div>
-      <div class="gallery">
-        <div class="gallery-item" onclick="openModal('./photos/Riya_Goswami (5).jpg', 'Riya Goswami MCA 2021')">
-          <img src="./photos/Riya_Goswami (5).jpg" alt="Riya Goswami">
-          <div class="desc">Riya Goswami</div>
-        </div>
-      </div>
-      <div class="gallery">
-        <div class="gallery-item" onclick="openModal('./photos/Riya_Goswami (6).jpg', 'Riya Goswami MCA 2021')">
-          <img src="./photos/Riya_Goswami (6).jpg" alt="Riya Goswami">
-          <div class="desc">Riya Goswami</div>
-        </div>
-      </div>
-      <div class="gallery">
-        <div class="gallery-item" onclick="openModal('./photos/Isha_Yadav (3).jpg', 'Isha Yadav MCA 2021')">
-          <img src="./photos/Isha_Yadav (3).jpg" alt="Isha Yadav">
-          <div class="desc">Isha Yadav</div>
-        </div>
-      </div>
-    </div>
-    
-    <!-- Column 4 -->
-    <div class="column-row">
-      <div class="gallery">
-        <div class="gallery-item" onclick="openModal('./photos/Sayani_Dev.jpeg', 'Sayani Dev MCA 2021')">
-          <img src="./photos/Sayani_Dev.jpeg" alt="Sayani Dev">
-          <div class="desc">Sayani Dev</div>
-        </div>
-      </div>
-      <div class="gallery">
-        <div class="gallery-item" onclick="openModal('./photos/Shreetama_Das (1).jpg', 'Shreetama Das MCA 2021')">
-          <img src="./photos/Shreetama_Das (1).jpg" alt="Shreetama Das">
-          <div class="desc">Shreetama Das</div>
-        </div>
-      </div>
-      <div class="gallery">
-        <div class="gallery-item" onclick="openModal('./photos/Shreetama_Das (2).jpg', 'Shreetama Das MCA 2021')">
-          <img src="./photos/Shreetama_Das (2).jpg" alt="Shreetama Das">
-          <div class="desc">Shreetama Das</div>
-        </div>
-      </div>
-      <div class="gallery">
-        <div class="gallery-item" onclick="openModal('./photos/Shreetama_Das (3).jpg', 'Shreetama Das MCA 2021')">
-          <img src="./photos/Shreetama_Das (3).jpg" alt="Shreetama Das">
-          <div class="desc">Shreetama Das</div>
-        </div>
-      </div>
-      <div class="gallery">
-        <div class="gallery-item" onclick="openModal('./photos/Shreetama_Das (4).jpg', 'Shreetama Das MCA 2021')">
-          <img src="./photos/Shreetama_Das (4).jpg" alt="Shreetama Das">
-          <div class="desc">Shreetama Das</div>
-        </div>
-      </div>
-      <div class="gallery">
-        <div class="gallery-item" onclick="openModal('./photos/Suchana_majumdar (1).jpeg', 'Suchana Majumdar MCA 2021')">
-          <img src="./photos/Suchana_majumdar (1).jpeg" alt="Suchana Majumdar">
-          <div class="desc">Suchana Majumdar</div>
-        </div>
-      </div>
-      <div class="gallery">
-        <div class="gallery-item" onclick="openModal('./photos/Suchana_majumdar (1).jpg', 'Suchana Majumdar MCA 2021')">
-          <img src="./photos/Suchana_majumdar (1).jpg" alt="Suchana Majumdar">
-          <div class="desc">Suchana Majumdar</div>
-        </div>
-      </div>
-      <div class="gallery">
-        <div class="gallery-item" onclick="openModal('./photos/Suchana_majumdar (2).jpeg', 'Suchana Majumdar MCA 2021')">
-          <img src="./photos/Suchana_majumdar (2).jpeg" alt="Suchana Majumdar">
-          <div class="desc">Suchana Majumdar</div>
-        </div>
-      </div>
-      <div class="gallery">
-        <div class="gallery-item" onclick="openModal('./photos/Sourav_Saha (1).jpg', 'Sourav Saha MCA 2021')">
-          <img src="./photos/Sourav_Saha (1).jpg" alt="Sourav Saha">
-          <div class="desc">Sourav Saha</div>
-        </div>
-      </div>
-      <div class="gallery">
-        <div class="gallery-item" onclick="openModal('./photos/Sourav_Saha (2).jpg', 'Sourav Saha MCA 2021')">
-          <img src="./photos/Sourav_Saha (2).jpg" alt="Sourav Saha">
-          <div class="desc">Sourav Saha</div>
-        </div>
-      </div>
-      <div class="gallery">
-        <div class="gallery-item" onclick="openModal('./photos/Suvendu_Dinda (1).jpeg', 'Suvendu Dinda MCA 2021')">
-          <img src="./photos/Suvendu_Dinda (1).jpeg" alt="Suvendu Dinda">
-          <div class="desc">Suvendu Dinda</div>
-        </div>
-      </div>
-    </div>
-    
-    <!-- Column 5 -->
-    <div class="column-row">
-      <div class="gallery">
-        <div class="gallery-item" onclick="openModal('./photos/Disha_Sana (1).jpg', 'Disha Sana MCA 2021')">
-          <img src="./photos/Disha_Sana (1).jpg" alt="Disha Sana">
-          <div class="desc">Disha Sana</div>
-        </div>
-      </div>
-      <div class="gallery">
-        <div class="gallery-item" onclick="openModal('./photos/Disha_Sana (2).jpg', 'Disha Sana MCA 2021')">
-          <img src="./photos/Disha_Sana (2).jpg" alt="Disha Sana">
-          <div class="desc">Disha Sana</div>
-        </div>
-      </div>
-      <div class="gallery">
-        <div class="gallery-item" onclick="openModal('./photos/Sayani_Dev.jpeg', 'Sayani Dev MCA 2021')">
-          <img src="./photos/Sayani_Dev.jpeg" alt="Sayani Dev">
-          <div class="desc">Sayani Dev</div>
-        </div>
-      </div>
-      <div class="gallery">
-        <div class="gallery-item" onclick="openModal('./photos/Anamika.jpeg', 'Anamika Ghorui MCA 2021')">
-          <img src="./photos/Anamika.jpeg" alt="Anamika Ghorui">
-          <div class="desc">Anamika Ghorui</div>
-        </div>
-      </div>
-      <div class="gallery">
-        <div class="gallery-item" onclick="openModal('./photos/Abhijit_Maitra (2).jpg', 'Abhijit Maitra MCA 2021')">
-          <img src="./photos/Abhijit_Maitra (2).jpg" alt="Abhijit Maitra">
-          <div class="desc">Abhijit Maitra</div>
-        </div>
-      </div>
-      <div class="gallery">
-        <div class="gallery-item" onclick="openModal('./photos/Abhijit_Maitra (3).jpg', 'Abhijit Maitra MCA 2021')">
-          <img src="./photos/Abhijit_Maitra (3).jpg" alt="Abhijit Maitra">
-          <div class="desc">Abhijit Maitra</div>
-        </div>
-      </div>
-      <div class="gallery">
-        <div class="gallery-item" onclick="openModal('./photos/Abhijit_Maitra (4).jpg', 'Abhijit Maitra MCA 2021')">
-          <img src="./photos/Abhijit_Maitra (4).jpg" alt="Abhijit Maitra">
-          <div class="desc">Abhijit Maitra</div>
-        </div>
-      </div>
-      <div class="gallery">
-        <div class="gallery-item" onclick="openModal('./photos/Abhijit_Maitra (5).jpg', 'Abhijit Maitra MCA 2021')">
-          <img src="./photos/Abhijit_Maitra (5).jpg" alt="Abhijit Maitra">
-          <div class="desc">Abhijit Maitra</div>
-        </div>
-      </div>
-      <div class="gallery">
-        <div class="gallery-item" onclick="openModal('./photos/PAYEL_ADAK.jpg', 'Payel Adak MCA 2021')">
-          <img src="./photos/PAYEL_ADAK.jpg" alt="Payel Adak">
-          <div class="desc">Payel Adak</div>
-        </div>
-      </div>
-      <div class="gallery">
-        <div class="gallery-item" onclick="openModal('./photos/SUSMITA_HAZRA.jpeg', 'Susmita Hazra MCA 2021')">
-          <img src="./photos/SUSMITA_HAZRA.jpeg" alt="Susmita Hazra">
-          <div class="desc">Susmita Hazra</div>
-        </div>
-      </div>
-      <div class="gallery">
-        <div class="gallery-item" onclick="openModal('./photos/ANTARA_GHOSH.jpg', 'Antara Ghosh MCA 2021')">
-          <img src="./photos/ANTARA_GHOSH.jpg" alt="Antara Ghosh">
-          <div class="desc">Antara Ghosh</div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Image Modal -->
   <div id="imageModal" class="modal">
     <span class="close" onclick="closeModal()">&times;</span>
     <img class="modal-content" id="modalImage">
@@ -402,57 +41,150 @@
 
   <footer>
     <div class="footer-content">
-      <p>&copy; 2025 RCC Institute of Information Technology. All rights reserved.</p>
+      <p>&copy; 2025 RCCIIT. All rights reserved.</p>
       <div class="social-links">
-        <a href="https://www.facebook.com/jayantakarmakar998"><i class="fab fa-facebook"></i></a>
-        <a href="https://x.com/Jayanta998"><i class="fab fa-twitter"></i></a>
-        <a href="https://www.instagram.com/jayantakarmakar998/"><i class="fab fa-instagram"></i></a>
-        <a href="https://www.linkedin.com/in/jayanta-karmakar-496641140/"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
       </div>
     </div>
   </footer>
 
   <script>
-    // Mobile navigation toggle
-    function myFunction() {
-      var x = document.getElementById("myTopnav");
-      if (x.className === "topnav") {
-        x.className += " responsive";
-      } else {
-        x.className = "topnav";
+  // Image data array - sorted alphabetically by student name
+  const imageData = [
+        { src: './photos/Abhijit_Maitra (2).jpg', alt: 'Abhijit Maitra', desc: 'Abhijit Maitra' },
+        { src: './photos/Abhijit_Maitra (3).jpg', alt: 'Abhijit Maitra', desc: 'Abhijit Maitra' },
+        { src: './photos/Abhijit_Maitra (4).jpg', alt: 'Abhijit Maitra', desc: 'Abhijit Maitra' },
+        { src: './photos/Abhijit_Maitra (5).jpg', alt: 'Abhijit Maitra', desc: 'Abhijit Maitra' },
+        { src: './photos/Anamika.jpeg', alt: 'Anamika Ghorui', desc: 'Anamika Ghorui' },
+        { src: './photos/Anushka_Sen (1).jpg', alt: 'Anuska Sen', desc: 'Anuska Sen' },
+        { src: './photos/Anushka_Sen (2).jpg', alt: 'Anuska Sen', desc: 'Anuska Sen' },
+        { src: './photos/Anushka_Sen (3).jpg', alt: 'Anuska Sen', desc: 'Anuska Sen' },
+        { src: './photos/Arijit_Roy (1).jpg', alt: 'Arijit Roy', desc: 'Arijit Roy' },
+        { src: './photos/Arijit_Roy (2).jpg', alt: 'Arijit Roy', desc: 'Arijit Roy' },
+        { src: './photos/Arijit_Roy (3).jpg', alt: 'Arijit Roy', desc: 'Arijit Roy' },
+        { src: './photos/Arpita_kundu (1).jpg', alt: 'Arpita Kundu', desc: 'Arpita Kundu' },
+        { src: './photos/Arpita_Kundu (2).jpg', alt: 'Arpita Kundu', desc: 'Arpita Kundu' },
+        { src: './photos/Arpita_Kundu (3).jpg', alt: 'Arpita Kundu', desc: 'Arpita Kundu' },
+        { src: './photos/Arpita_Kundu (4).jpg', alt: 'Arpita Kundu', desc: 'Arpita Kundu' },
+        { src: './photos/Debjit (1).jpeg', alt: 'Debjit Ghosh', desc: 'Debjit Ghosh' },
+        { src: './photos/Debjit (2).jpeg', alt: 'Debjit Ghosh', desc: 'Debjit Ghosh' },
+        { src: './photos/Dev_Das (1).jpg', alt: 'Devdas Roy', desc: 'Devdas Roy' },
+        { src: './photos/Dev_Das (2).jpeg', alt: 'Devdas Roy', desc: 'Devdas Roy' },
+        { src: './photos/Dev_Das (2).jpg', alt: 'Devdas Roy', desc: 'Devdas Roy' },
+        { src: './photos/Dev_Das (3).jpg', alt: 'Devdas Roy', desc: 'Devdas Roy' },
+        { src: './photos/Dev_Das (4).jpg', alt: 'Devdas Roy', desc: 'Devdas Roy' },
+        { src: './photos/Dev_Das (5).jpg', alt: 'Devdas Roy', desc: 'Devdas Roy' },
+        { src: './photos/Dev_Das (6).jpg', alt: 'Devdas Roy', desc: 'Devdas Roy' },
+        { src: './photos/Dev_Das (7).jpg', alt: 'Devdas Roy', desc: 'Devdas Roy' },
+        { src: './photos/Disha_Sana (1).jpg', alt: 'Disha Sana', desc: 'Disha Sana' },
+        { src: './photos/Disha_Sana (2).jpg', alt: 'Disha Sana', desc: 'Disha Sana' },
+        { src: './photos/Isha_Yadav (1).jpg', alt: 'Isha Yadav', desc: 'Isha Yadav' },
+        { src: './photos/Isha_Yadav (2).jpg', alt: 'Isha Yadav', desc: 'Isha Yadav' },
+        { src: './photos/Isha_Yadav (3).jpg', alt: 'Isha Yadav', desc: 'Isha Yadav' },
+        { src: './photos/Jayanta.jpeg', alt: 'Jayanta Karmakar', desc: 'Jayanta Karmakar' },
+        { src: './photos/jayanta_banti.jpg', alt: 'Jayanta Karmakar', desc: 'Jayanta Karmakar' },
+        { src: './photos/JayantaKarmakar.jpg', alt: 'Jayanta Karmakar', desc: 'Jayanta Karmakar' },
+        { src: './photos/Moumita.jpg', alt: 'Moumita Singha', desc: 'Moumita Singha' },
+        { src: './photos/Nishant_Gond (1).jpg', alt: 'Nishant Gond', desc: 'Nishant Gond' },
+        { src: './photos/Nishant_Gond (2).jpg', alt: 'Nishant Gond', desc: 'Nishant Gond' },
+        { src: './photos/PAYEL_ADAK.jpg', alt: 'Payel Adak', desc: 'Payel Adak' },
+        { src: './photos/Riya_Goswami (1).jpg', alt: 'Riya Goswami', desc: 'Riya Goswami' },
+        { src: './photos/Riya_Goswami (2).jpg', alt: 'Riya Goswami', desc: 'Riya Goswami' },
+        { src: './photos/Riya_Goswami (5).jpg', alt: 'Riya Goswami', desc: 'Riya Goswami' },
+        { src: './photos/Riya_Goswami (6).jpg', alt: 'Riya Goswami', desc: 'Riya Goswami' },
+        { src: './photos/Sayani_Dev.jpeg', alt: 'Sayani Dev', desc: 'Sayani Dev' },
+        { src: './photos/Shreetama_Das (1).jpg', alt: 'Shreetama Das', desc: 'Shreetama Das' },
+        { src: './photos/Shreetama_Das (2).jpg', alt: 'Shreetama Das', desc: 'Shreetama Das' },
+        { src: './photos/Shreetama_Das (3).jpg', alt: 'Shreetama Das', desc: 'Shreetama Das' },
+        { src: './photos/Shreetama_Das (4).jpg', alt: 'Shreetama Das', desc: 'Shreetama Das' },
+        { src: './photos/Sourav_Saha (1).jpg', alt: 'Sourav Saha', desc: 'Sourav Saha' },
+        { src: './photos/Sourav_Saha (2).jpg', alt: 'Sourav Saha', desc: 'Sourav Saha' },
+        { src: './photos/Suchana_majumdar (1).jpeg', alt: 'Suchana Majumdar', desc: 'Suchana Majumdar' },
+        { src: './photos/Suchana_majumdar (1).jpg', alt: 'Suchana Majumdar', desc: 'Suchana Majumdar' },
+        { src: './photos/Suchana_majumdar (2).jpeg', alt: 'Suchana Majumdar', desc: 'Suchana Majumdar' },
+        { src: './photos/SUSMITA_HAZRA.jpeg', alt: 'Susmita Hazra', desc: 'Susmita Hazra' },
+        { src: './photos/Suvendu_Dinda (1).jpeg', alt: 'Suvendu Dinda', desc: 'Suvendu Dinda' }
+      ];
+
+      // Fisher-Yates shuffle algorithm
+      function shuffleArray(array) {
+        for (let i = array.length - 1; i > 0; i--) {
+          const j = Math.floor(Math.random() * (i + 1));
+          [array[i], array[j]] = [array[j], array[i]];
+        }
+        return array;
+      }
+
+      // Generate compressed thumbnails gallery
+      function generateGallery() {
+        const container = document.getElementById('gallery');
+        container.innerHTML = '';
+        
+        const galleryGrid = document.createElement('div');
+        galleryGrid.className = 'gallery-grid';
+
+        // Shuffle the array before generating gallery
+        const shuffledImages = shuffleArray([...imageData]);
+        
+        shuffledImages.forEach(img => {
+          // Use thumbnail version for grid, full version for modal
+          const thumbSrc = img.src.replace('/photos/', '/thumbs/');
+          galleryGrid.innerHTML += `
+            <div class="gallery-item" 
+                onclick="openModal('${img.src}', '${img.desc} MCA 2021')"
+                data-fullsrc="${img.src}">
+              <img src="${thumbSrc}" alt="${img.alt}" loading="lazy">
+              <div class="desc">${img.desc}</div>
+            </div>
+          `;
+      });
+      
+      container.appendChild(galleryGrid);
+      
+      // Preload full-size images when idle
+      if ('requestIdleCallback' in window) {
+        requestIdleCallback(() => {
+          imageData.forEach(img => {
+            new Image().src = img.src;
+          });
+        });
       }
     }
 
-    // Image modal functionality
     function openModal(src, caption) {
-      var modal = document.getElementById("imageModal");
-      var modalImg = document.getElementById("modalImage");
-      var captionText = document.getElementById("caption");
+      const modal = document.getElementById("imageModal");
+      const modalImg = document.getElementById("modalImage");
+      const captionText = document.getElementById("caption");
       
       modal.style.display = "block";
       modalImg.src = src;
       captionText.innerHTML = caption;
-      
-      // Add class to body to prevent scrolling
       document.body.classList.add("modal-open");
     }
 
     function closeModal() {
-      var modal = document.getElementById("imageModal");
-      modal.style.display = "none";
-      
-      // Remove class from body to re-enable scrolling
+      document.getElementById("imageModal").style.display = "none";
       document.body.classList.remove("modal-open");
     }
 
-    // Close modal when clicking outside the image
-    window.onclick = function(event) {
-      var modal = document.getElementById("imageModal");
-      if (event.target == modal) {
-        closeModal();
-      }
+    function toggleMenu() {
+      const x = document.getElementById("myTopnav");
+      x.classList.toggle("responsive");
     }
+
+    window.onload = function() {
+      imageData.sort((a, b) => a.alt.localeCompare(b.alt));
+      generateGallery();
+      
+      document.addEventListener('keydown', function(e) {
+        if (e.key === "Escape" && document.body.classList.contains("modal-open")) {
+          closeModal();
+        }
+      });
+    };
   </script>
 </body>
-
 </html>
